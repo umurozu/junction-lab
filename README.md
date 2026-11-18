@@ -11,26 +11,25 @@
 > Full write-up: [**reports/TECHNICAL_REPORT.md**](reports/TECHNICAL_REPORT.md).
 
 ```mermaid
-flowchart LR
-    subgraph FIELD["🚦 Field (one per junction)"]
-        SIM["jl-sim<br/>simulated detectors<br/>(stop-line / upstream loops)"]
-        CTRL["jl-controller<br/>stage FSM + conflict monitor<br/>SNMPv2c agent · NTCIP 1202"]
-        SIM -- "JLP DETECTOR" --> CTRL
+flowchart TB
+    subgraph FIELD["🚦 Field — one per junction"]
+        direction LR
+        SIM["<b>jl-sim</b><br/>simulated loop detectors"]
+        CTRL["<b>jl-controller</b><br/>stage FSM · conflict monitor<br/>SNMPv2c agent · NTCIP 1202"]
+        SIM -->|JLP DETECTOR| CTRL
     end
 
     subgraph CENTER["🖥️ Center"]
-        API["jl-center (FastAPI)<br/>SNMP poller · trap receiver<br/>JLP endpoint · REST + JWT<br/>/metrics (Prometheus)"]
+        direction LR
+        API["<b>jl-center</b> (FastAPI)<br/>SNMP poller · trap receiver<br/>JLP endpoint · REST + JWT<br/>Prometheus /metrics"]
         DB[("PostgreSQL")]
         API --> DB
     end
 
-    UI["React/TS operator panel<br/>map · live intersection · timing diagram"]
+    UI["💻 <b>Operator panel</b> (React/TS)<br/>map · live intersection · timing diagram"]
 
-    API -- "SNMP GET/SET (1 Hz)" --> CTRL
-    CTRL -- "SNMP traps" --> API
-    CTRL -- "JLP status / counts / alarms" --> API
-    API -- "JLP commands" --> CTRL
-    API <-- "WebSocket" --> UI
+    CTRL <==>|"SNMP GET/SET · traps<br/>JLP status / counts / alarms / commands"| API
+    API <-->|WebSocket| UI
 ```
 
 ## Screenshots

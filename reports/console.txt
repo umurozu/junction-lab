@@ -1,0 +1,122 @@
+== E1: Demand level sweep (4-arm, fixed vs Webster vs actuated)
+  Fixed P1 (35/20)                           x=0.4            delay=  14.76s  maxQ=  10  thr=1.0  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=0.4            delay=  12.14s  maxQ=   8  thr=1.0  gap/max=0.0/0.0  cyc=41.4  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=0.4            delay=  10.73s  maxQ=   7  thr=1.0  gap/max=163.5/4.9  cyc=42.99  conflict_steps=0  badseq=0  flash=None
+  Fixed P1 (35/20)                           x=0.6            delay=  16.02s  maxQ=  14  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=0.6            delay=  13.67s  maxQ=  13  thr=1.0  gap/max=0.0/0.0  cyc=47.4  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=0.6            delay=  12.83s  maxQ=  11  thr=1.0  gap/max=169.8/1.2  cyc=42.3  conflict_steps=0  badseq=0  flash=None
+  Fixed P1 (35/20)                           x=0.8            delay=  17.89s  maxQ=  18  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=0.8            delay=  15.88s  maxQ=  16  thr=0.99  gap/max=0.0/0.0  cyc=56.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=0.8            delay=  14.86s  maxQ=  14  thr=1.0  gap/max=148.5/0.6  cyc=48.63  conflict_steps=0  badseq=0  flash=None
+  Fixed P1 (35/20)                           x=1.0            delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=1.0            delay=  19.15s  maxQ=  19  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=1.0            delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Fixed P1 (35/20)                           x=1.15           delay=   40.8s  maxQ=  73  thr=0.98  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=1.15           delay=  22.81s  maxQ=  23  thr=0.99  gap/max=0.0/0.0  cyc=83.7  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=1.15           delay=  20.26s  maxQ=  19  thr=1.0  gap/max=86.7/14.6  cyc=71.39  conflict_steps=0  badseq=0  flash=None
+  Fixed P1 (35/20)                           x=1.3            delay= 119.92s  maxQ= 134  thr=0.94  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=1.3            delay=  25.63s  maxQ=  26  thr=0.99  gap/max=0.0/0.0  cyc=102.9  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=1.3            delay=  27.08s  maxQ=  38  thr=0.99  gap/max=60.1/29.2  cyc=81.1  conflict_steps=0  badseq=0  flash=None
+
+== E2: Detector placement (actuated, 4-arm, demand 1.0x)
+  Stop line (presence)                       x=stopline       delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Upstream only 10 m                         x=upstream_10    delay=  15.48s  maxQ=  17  thr=1.0  gap/max=139.3/2.1  cyc=51.26  conflict_steps=0  badseq=0  flash=None
+  Upstream only 25 m                         x=upstream_25    delay=  22.17s  maxQ=  23  thr=0.99  gap/max=156.9/1.0  cyc=45.8  conflict_steps=0  badseq=0  flash=None
+  Upstream only 40 m                         x=upstream_40    delay=  31.06s  maxQ=  19  thr=0.99  gap/max=163.2/1.1  cyc=44.02  conflict_steps=0  badseq=0  flash=None
+  Upstream only 70 m                         x=upstream_70    delay=  49.85s  maxQ=  22  thr=0.99  gap/max=170.9/0.6  cyc=42.16  conflict_steps=0  badseq=0  flash=None
+  Upstream only 120 m                        x=upstream_120   delay=  85.26s  maxQ=  32  thr=0.97  gap/max=176.2/1.1  cyc=40.79  conflict_steps=0  badseq=0  flash=None
+  Stop line + 40 m                           x=both_40        delay=  16.72s  maxQ=  19  thr=1.0  gap/max=100.5/10.8  cyc=65.09  conflict_steps=0  badseq=0  flash=None
+  No detector                                x=none           delay= 575.51s  maxQ= 253  thr=0.76  gap/max=0.0/0.0  cyc=None  conflict_steps=0  badseq=0  flash=None
+
+== E3: Passage (gap) time sweep
+  demand 0.8x                                x=0.5            delay= 220.32s  maxQ= 125  thr=0.9  gap/max=223.4/0.3  cyc=32.33  conflict_steps=0  badseq=0  flash=None
+  demand 0.8x                                x=1.0            delay= 244.53s  maxQ= 132  thr=0.89  gap/max=220.2/0.2  cyc=32.76  conflict_steps=0  badseq=0  flash=None
+  demand 0.8x                                x=1.5            delay= 291.71s  maxQ= 153  thr=0.87  gap/max=215.0/0.1  cyc=33.59  conflict_steps=0  badseq=0  flash=None
+  demand 0.8x                                x=2.5            delay=  14.86s  maxQ=  14  thr=1.0  gap/max=148.5/0.6  cyc=48.63  conflict_steps=0  badseq=0  flash=None
+  demand 0.8x                                x=3.5            delay=  15.08s  maxQ=  14  thr=1.0  gap/max=133.6/1.1  cyc=53.66  conflict_steps=0  badseq=0  flash=None
+  demand 0.8x                                x=5.0            delay=  16.25s  maxQ=  15  thr=1.0  gap/max=106.6/6.4  cyc=64.14  conflict_steps=0  badseq=0  flash=None
+  demand 0.8x                                x=7.0            delay=  17.78s  maxQ=  17  thr=1.0  gap/max=73.6/20.6  cyc=77.17  conflict_steps=0  badseq=0  flash=None
+  demand 1.15x                               x=0.5            delay= 964.66s  maxQ= 435  thr=0.65  gap/max=227.9/0.0  cyc=31.9  conflict_steps=0  badseq=0  flash=None
+  demand 1.15x                               x=1.0            delay=1005.22s  maxQ= 443  thr=0.64  gap/max=224.0/0.0  cyc=32.16  conflict_steps=0  badseq=0  flash=None
+  demand 1.15x                               x=1.5            delay=1072.08s  maxQ= 455  thr=0.63  gap/max=217.9/0.0  cyc=33.12  conflict_steps=0  badseq=0  flash=None
+  demand 1.15x                               x=2.5            delay=  20.26s  maxQ=  19  thr=1.0  gap/max=86.7/14.6  cyc=71.39  conflict_steps=0  badseq=0  flash=None
+  demand 1.15x                               x=3.5            delay=  21.08s  maxQ=  20  thr=0.99  gap/max=74.6/19.5  cyc=77.16  conflict_steps=0  badseq=0  flash=None
+  demand 1.15x                               x=5.0            delay=  23.24s  maxQ=  22  thr=0.99  gap/max=53.4/32.1  cyc=84.76  conflict_steps=0  badseq=0  flash=None
+  demand 1.15x                               x=7.0            delay=  25.96s  maxQ=  27  thr=0.99  gap/max=35.0/44.2  cyc=91.63  conflict_steps=0  badseq=0  flash=None
+
+== E4: Max green sweep (demand 1.15x)
+  Actuated                                   x=15             delay= 581.68s  maxQ= 363  thr=0.76  gap/max=66.1/107.2  cyc=41.8  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=20             delay= 206.07s  maxQ= 208  thr=0.9  gap/max=70.7/81.0  cyc=47.7  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=30             delay=  36.82s  maxQ=  58  thr=0.99  gap/max=66.7/55.4  cyc=59.23  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=45             delay=  20.89s  maxQ=  21  thr=0.99  gap/max=81.9/21.9  cyc=69.72  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=60             delay=  19.91s  maxQ=  20  thr=1.0  gap/max=93.9/5.6  cyc=72.82  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=90             delay=  19.77s  maxQ=  22  thr=0.99  gap/max=97.1/0.4  cyc=74.2  conflict_steps=0  badseq=0  flash=None
+
+== E5: Detector miss rate (faulty / dirty loop)
+  Stop line                                  x=0.0            delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Upstream 40 m                              x=0.0            delay=  31.06s  maxQ=  19  thr=0.99  gap/max=163.2/1.1  cyc=44.02  conflict_steps=0  badseq=0  flash=None
+  Stop line                                  x=0.05           delay=  17.98s  maxQ=  24  thr=0.99  gap/max=125.1/3.1  cyc=56.58  conflict_steps=0  badseq=0  flash=None
+  Upstream 40 m                              x=0.05           delay=  31.23s  maxQ=  20  thr=0.99  gap/max=163.9/0.7  cyc=43.97  conflict_steps=0  badseq=0  flash=None
+  Stop line                                  x=0.1            delay=  19.53s  maxQ=  27  thr=0.99  gap/max=131.0/2.3  cyc=54.25  conflict_steps=0  badseq=0  flash=None
+  Upstream 40 m                              x=0.1            delay=  31.15s  maxQ=  20  thr=0.99  gap/max=163.3/1.0  cyc=44.07  conflict_steps=0  badseq=0  flash=None
+  Stop line                                  x=0.2            delay=  24.42s  maxQ=  30  thr=0.99  gap/max=143.2/1.1  cyc=50.11  conflict_steps=0  badseq=0  flash=None
+  Upstream 40 m                              x=0.2            delay=  31.53s  maxQ=  20  thr=0.99  gap/max=162.2/1.3  cyc=44.21  conflict_steps=0  badseq=0  flash=None
+  Stop line                                  x=0.35           delay=  48.45s  maxQ=  59  thr=0.98  gap/max=161.5/0.6  cyc=44.61  conflict_steps=0  badseq=0  flash=None
+  Upstream 40 m                              x=0.35           delay=  31.79s  maxQ=  26  thr=0.99  gap/max=161.9/1.1  cyc=44.4  conflict_steps=0  badseq=0  flash=None
+  Stop line                                  x=0.5            delay= 146.37s  maxQ= 165  thr=0.93  gap/max=182.8/0.0  cyc=39.47  conflict_steps=0  badseq=0  flash=None
+  Upstream 40 m                              x=0.5            delay=   31.8s  maxQ=  20  thr=0.99  gap/max=159.0/2.1  cyc=44.93  conflict_steps=0  badseq=0  flash=None
+
+== E6: Junction layouts
+  Fixed P1                                   x=four_leg       delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Fixed P2                                   x=four_leg       delay= 262.47s  maxQ= 207  thr=0.87  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=four_leg       delay=  19.15s  maxQ=  19  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=four_leg       delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=left_turn      delay=  53.62s  maxQ=  65  thr=0.98  gap/max=0.0/0.0  cyc=81.8  conflict_steps=0  badseq=0  flash=None
+  Fixed P2                                   x=left_turn      delay= 254.02s  maxQ= 198  thr=0.89  gap/max=0.0/0.0  cyc=83.7  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=left_turn      delay=  38.63s  maxQ=  21  thr=0.99  gap/max=0.0/0.0  cyc=102.9  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=left_turn      delay=  33.24s  maxQ=  25  thr=0.99  gap/max=95.4/25.5  cyc=89.18  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=t_junction     delay=   16.7s  maxQ=  19  thr=0.99  gap/max=0.0/0.0  cyc=64.3  conflict_steps=0  badseq=0  flash=None
+  Fixed P2                                   x=t_junction     delay=  21.49s  maxQ=  23  thr=0.99  gap/max=0.0/0.0  cyc=64.3  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=t_junction     delay=  16.07s  maxQ=  19  thr=1.0  gap/max=0.0/0.0  cyc=63.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=t_junction     delay=  14.18s  maxQ=  16  thr=1.0  gap/max=126.8/5.6  cyc=54.67  conflict_steps=0  badseq=0  flash=None
+
+== E7: Pedestrian demand (push button)
+  Actuated                                   x=0              delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=0              delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=30             delay=  17.27s  maxQ=  23  thr=1.0  gap/max=115.2/5.1  cyc=60.28  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=30             delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=90             delay=  17.29s  maxQ=  23  thr=1.0  gap/max=114.7/4.9  cyc=60.57  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=90             delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=200            delay=  17.29s  maxQ=  23  thr=1.0  gap/max=114.6/4.9  cyc=60.68  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=200            delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=400            delay=  17.29s  maxQ=  23  thr=1.0  gap/max=114.7/4.8  cyc=60.68  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=400            delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+
+== E8: Emergency vehicle preemption frequency
+  Actuated                                   x=0              delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=600            delay=   18.3s  maxQ=  23  thr=0.99  gap/max=115.5/5.3  cyc=59.96  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=300            delay=  19.33s  maxQ=  29  thr=1.0  gap/max=114.5/6.2  cyc=60.0  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=120            delay=  26.31s  maxQ=  37  thr=0.99  gap/max=108.8/14.2  cyc=58.55  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=60             delay=  25.88s  maxQ=  33  thr=0.99  gap/max=120.7/0.0  cyc=59.7  conflict_steps=0  badseq=0  flash=None
+
+== E9: Fault injection (t=600 s)
+  No fault                                   x=none           delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Stuck detector (phase 2, always occupied)  x=DETECTOR_FAULT delay=  25.32s  maxQ=  29  thr=0.99  gap/max=39.1/46.1  cyc=84.98  conflict_steps=0  badseq=0  flash=None
+  Welded relay: phase 2 green (conflict)     x=CONFLICT       delay=7752.08s  maxQ= 644  thr=0.16  gap/max=20.2/0.8  cyc=345.65  conflict_steps=0  badseq=0  flash=605.85
+  Red lamp failure (phase 3)                 x=RED_LAMP_OUT   delay=7792.88s  maxQ= 644  thr=0.16  gap/max=19.8/0.8  cyc=366.19  conflict_steps=0  badseq=0  flash=600.1
+
+== E10: Demand profile: flat vs peak wave
+  Fixed P1                                   x=flat           delay=  22.75s  maxQ=  29  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=flat           delay=  19.15s  maxQ=  19  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=flat           delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Fixed P1                                   x=peak           delay=  33.41s  maxQ=  39  thr=0.99  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Webster                                    x=peak           delay=  27.08s  maxQ=  26  thr=1.0  gap/max=0.0/0.0  cyc=69.2  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=peak           delay=   22.4s  maxQ=  30  thr=1.0  gap/max=107.3/15.4  cyc=59.05  conflict_steps=0  badseq=0  flash=None
+
+== E11: Intergreen (amber + all-red) effect
+  Actuated                                   x=3+1            delay=   15.9s  maxQ=  24  thr=1.0  gap/max=126.0/4.0  cyc=55.86  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=3+2            delay=  17.13s  maxQ=  23  thr=1.0  gap/max=116.0/5.7  cyc=59.46  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=4+2            delay=  18.52s  maxQ=  24  thr=1.0  gap/max=108.2/5.9  cyc=63.69  conflict_steps=0  badseq=0  flash=None
+  Actuated                                   x=4+3            delay=  20.16s  maxQ=  24  thr=1.0  gap/max=99.6/6.6  cyc=68.09  conflict_steps=0  badseq=0  flash=None
+
+{'minutes': 60.0, 'seeds': 10, 'runs': 990, 'wall_s': 397.8}

@@ -1,0 +1,4312 @@
+{
+ "meta": {
+  "minutes": 60.0,
+  "seeds": 10,
+  "runs": 990,
+  "wall_s": 397.8
+ },
+ "experiments": {
+  "E1": {
+   "title": "Demand level sweep (4-arm, fixed vs Webster vs actuated)",
+   "param": "demand_factor",
+   "cases": [
+    {
+     "label": "Fixed P1 (35/20)",
+     "x": 0.4,
+     "preset": "four_leg",
+     "rates": {
+      "1": 280.0,
+      "2": 100.0,
+      "3": 260.0,
+      "4": 80.0
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 14.76,
+      "served": 704.3,
+      "arrived": 707.0,
+      "throughput_ratio": 1.0,
+      "residual_queue": 2.7,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 10,
+      "delay_min": 14.0,
+      "delay_max": 15.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 12.1,
+       "2": 22.4,
+       "3": 12.5,
+       "4": 21.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": 0.4,
+     "preset": "four_leg",
+     "rates": {
+      "1": 280.0,
+      "2": 100.0,
+      "3": 260.0,
+      "4": 80.0
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 12.14,
+      "served": 705.7,
+      "arrived": 707.0,
+      "throughput_ratio": 1.0,
+      "residual_queue": 1.3,
+      "cycles": 87.0,
+      "avg_cycle_s": 41.4,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 13.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 8,
+      "delay_min": 11.3,
+      "delay_max": 13.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 9.8,
+       "2": 19.6,
+       "3": 9.9,
+       "4": 18.4
+      },
+      "webster_greens": [
+       19,
+       8
+      ],
+      "webster_cycle": 40.6,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 0.4,
+     "preset": "four_leg",
+     "rates": {
+      "1": 280.0,
+      "2": 100.0,
+      "3": 260.0,
+      "4": 80.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 10.73,
+      "served": 704.5,
+      "arrived": 707.0,
+      "throughput_ratio": 1.0,
+      "residual_queue": 2.5,
+      "cycles": 83.9,
+      "avg_cycle_s": 42.99,
+      "gap_outs": 163.5,
+      "max_outs": 4.9,
+      "avg_green_s": 14.24,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 7,
+      "delay_min": 10.1,
+      "delay_max": 11.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 9.8,
+       "2": 13.7,
+       "3": 9.7,
+       "4": 13.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1 (35/20)",
+     "x": 0.6,
+     "preset": "four_leg",
+     "rates": {
+      "1": 420.0,
+      "2": 150.0,
+      "3": 390.0,
+      "4": 120.0
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 16.02,
+      "served": 1065.5,
+      "arrived": 1072.1,
+      "throughput_ratio": 0.99,
+      "residual_queue": 6.6,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 14,
+      "delay_min": 15.4,
+      "delay_max": 16.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 14.3,
+       "2": 22.5,
+       "3": 13.5,
+       "4": 22.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": 0.6,
+     "preset": "four_leg",
+     "rates": {
+      "1": 420.0,
+      "2": 150.0,
+      "3": 390.0,
+      "4": 120.0
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 13.67,
+      "served": 1069.4,
+      "arrived": 1072.1,
+      "throughput_ratio": 1.0,
+      "residual_queue": 2.7,
+      "cycles": 76.0,
+      "avg_cycle_s": 47.4,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 16.5,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 13,
+      "delay_min": 12.9,
+      "delay_max": 14.8,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 11.7,
+       "2": 21.3,
+       "3": 11.1,
+       "4": 19.9
+      },
+      "webster_greens": [
+       23,
+       10
+      ],
+      "webster_cycle": 46.8,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 0.6,
+     "preset": "four_leg",
+     "rates": {
+      "1": 420.0,
+      "2": 150.0,
+      "3": 390.0,
+      "4": 120.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 12.83,
+      "served": 1067.5,
+      "arrived": 1072.1,
+      "throughput_ratio": 1.0,
+      "residual_queue": 4.6,
+      "cycles": 85.2,
+      "avg_cycle_s": 42.3,
+      "gap_outs": 169.8,
+      "max_outs": 1.2,
+      "avg_green_s": 13.86,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 11,
+      "delay_min": 11.9,
+      "delay_max": 13.4,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 12.0,
+       "2": 16.6,
+       "3": 11.5,
+       "4": 15.8
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1 (35/20)",
+     "x": 0.8,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 17.89,
+      "served": 1429.4,
+      "arrived": 1438.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.4,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 18,
+      "delay_min": 17.3,
+      "delay_max": 18.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 16.6,
+       "2": 23.2,
+       "3": 15.8,
+       "4": 22.5
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": 0.8,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 15.88,
+      "served": 1429.4,
+      "arrived": 1438.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.4,
+      "cycles": 64.0,
+      "avg_cycle_s": 56.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 21.0,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 16,
+      "delay_min": 15.0,
+      "delay_max": 16.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 12.9,
+       "2": 27.4,
+       "3": 12.4,
+       "4": 23.4
+      },
+      "webster_greens": [
+       30,
+       12
+      ],
+      "webster_cycle": 55.4,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 0.8,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 14.86,
+      "served": 1433.1,
+      "arrived": 1438.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 5.7,
+      "cycles": 74.1,
+      "avg_cycle_s": 48.63,
+      "gap_outs": 148.5,
+      "max_outs": 0.6,
+      "avg_green_s": 17.0,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 14,
+      "delay_min": 14.3,
+      "delay_max": 15.2,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 13.4,
+       "2": 21.1,
+       "3": 12.7,
+       "4": 19.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1 (35/20)",
+     "x": 1.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700.0,
+      "2": 250.0,
+      "3": 650.0,
+      "4": 200.0
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": 1.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700.0,
+      "2": 250.0,
+      "3": 650.0,
+      "4": 200.0
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 19.15,
+      "served": 1785.8,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.7,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.1,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 18.1,
+      "delay_max": 20.8,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.5,
+       "2": 35.1,
+       "3": 13.9,
+       "4": 30.4
+      },
+      "webster_greens": [
+       39,
+       15
+      ],
+      "webster_cycle": 67.8,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 1.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700.0,
+      "2": 250.0,
+      "3": 650.0,
+      "4": 200.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1 (35/20)",
+     "x": 1.15,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 40.8,
+      "served": 2038.1,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.98,
+      "residual_queue": 35.7,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 73,
+      "delay_min": 25.6,
+      "delay_max": 82.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 61.9,
+       "2": 24.8,
+       "3": 28.7,
+       "4": 24.1
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": 1.15,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 22.81,
+      "served": 2060.8,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 13.0,
+      "cycles": 43.0,
+      "avg_cycle_s": 83.7,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 34.1,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 20.1,
+      "delay_max": 28.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 17.8,
+       "2": 47.1,
+       "3": 15.8,
+       "4": 33.2
+      },
+      "webster_greens": [
+       49,
+       19
+      ],
+      "webster_cycle": 81.4,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 1.15,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 20.26,
+      "served": 2064.7,
+      "arrived": 2073.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 9.1,
+      "cycles": 50.5,
+      "avg_cycle_s": 71.39,
+      "gap_outs": 86.7,
+      "max_outs": 14.6,
+      "avg_green_s": 28.18,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 19.1,
+      "delay_max": 21.8,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 18.4,
+       "2": 28.9,
+       "3": 17.2,
+       "4": 26.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1 (35/20)",
+     "x": 1.3,
+     "preset": "four_leg",
+     "rates": {
+      "1": 910.0,
+      "2": 325.0,
+      "3": 845.0,
+      "4": 260.0
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 119.92,
+      "served": 2204.3,
+      "arrived": 2342.4,
+      "throughput_ratio": 0.94,
+      "residual_queue": 138.1,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 134,
+      "delay_min": 80.5,
+      "delay_max": 208.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 196.7,
+       "2": 26.3,
+       "3": 106.9,
+       "4": 24.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": 1.3,
+     "preset": "four_leg",
+     "rates": {
+      "1": 910.0,
+      "2": 325.0,
+      "3": 845.0,
+      "4": 260.0
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 25.63,
+      "served": 2324.3,
+      "arrived": 2342.4,
+      "throughput_ratio": 0.99,
+      "residual_queue": 18.1,
+      "cycles": 35.0,
+      "avg_cycle_s": 102.9,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 43.9,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 26,
+      "delay_min": 24.3,
+      "delay_max": 28.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 20.3,
+       "2": 47.3,
+       "3": 19.0,
+       "4": 40.2
+      },
+      "webster_greens": [
+       64,
+       24
+      ],
+      "webster_cycle": 101.9,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 1.3,
+     "preset": "four_leg",
+     "rates": {
+      "1": 910.0,
+      "2": 325.0,
+      "3": 845.0,
+      "4": 260.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 27.08,
+      "served": 2320.8,
+      "arrived": 2342.4,
+      "throughput_ratio": 0.99,
+      "residual_queue": 21.6,
+      "cycles": 44.4,
+      "avg_cycle_s": 81.1,
+      "gap_outs": 60.1,
+      "max_outs": 29.2,
+      "avg_green_s": 32.99,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 38,
+      "delay_min": 23.1,
+      "delay_max": 33.2,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 28.2,
+       "2": 31.5,
+       "3": 23.0,
+       "4": 30.6
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E2": {
+   "title": "Detector placement (actuated, 4-arm, demand 1.0x)",
+   "param": "detector",
+   "cases": [
+    {
+     "label": "Stop line (presence)",
+     "x": "stopline",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream only 10 m",
+     "x": "upstream_10",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "detector": "upstream",
+     "setback_m": 10,
+     "result": {
+      "avg_delay_s": 15.48,
+      "served": 1787.3,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.7,
+      "cycles": 70.3,
+      "avg_cycle_s": 51.26,
+      "gap_outs": 139.3,
+      "max_outs": 2.1,
+      "avg_green_s": 18.27,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 17,
+      "delay_min": 15.1,
+      "delay_max": 16.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 13.8,
+       "2": 22.0,
+       "3": 13.3,
+       "4": 21.1
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream only 25 m",
+     "x": "upstream_25",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "detector": "upstream",
+     "setback_m": 25,
+     "result": {
+      "avg_delay_s": 22.17,
+      "served": 1784.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 10.3,
+      "cycles": 78.7,
+      "avg_cycle_s": 45.8,
+      "gap_outs": 156.9,
+      "max_outs": 1.0,
+      "avg_green_s": 15.56,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 21.5,
+      "delay_max": 23.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 19.2,
+       "2": 37.7,
+       "3": 16.9,
+       "4": 31.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream only 40 m",
+     "x": "upstream_40",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "detector": "upstream",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 31.06,
+      "served": 1777.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.8,
+      "cycles": 81.9,
+      "avg_cycle_s": 44.02,
+      "gap_outs": 163.2,
+      "max_outs": 1.1,
+      "avg_green_s": 14.74,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 29.9,
+      "delay_max": 32.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 25.9,
+       "2": 58.8,
+       "3": 22.5,
+       "4": 44.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream only 70 m",
+     "x": "upstream_70",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "detector": "upstream",
+     "setback_m": 70,
+     "result": {
+      "avg_delay_s": 49.85,
+      "served": 1767.8,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 24.9,
+      "cycles": 85.5,
+      "avg_cycle_s": 42.16,
+      "gap_outs": 170.9,
+      "max_outs": 0.6,
+      "avg_green_s": 13.83,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 22,
+      "delay_min": 47.4,
+      "delay_max": 51.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 42.2,
+       "2": 106.3,
+       "3": 34.5,
+       "4": 59.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream only 120 m",
+     "x": "upstream_120",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "detector": "upstream",
+     "setback_m": 120,
+     "result": {
+      "avg_delay_s": 85.26,
+      "served": 1744.4,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.97,
+      "residual_queue": 46.5,
+      "cycles": 88.4,
+      "avg_cycle_s": 40.79,
+      "gap_outs": 176.2,
+      "max_outs": 1.1,
+      "avg_green_s": 13.14,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 32,
+      "delay_min": 77.9,
+      "delay_max": 96.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 78.9,
+       "2": 199.3,
+       "3": 52.1,
+       "4": 83.3
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Stop line + 40 m",
+     "x": "both_40",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "detector": "both",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 16.72,
+      "served": 1786.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.5,
+      "cycles": 55.4,
+      "avg_cycle_s": 65.09,
+      "gap_outs": 100.5,
+      "max_outs": 10.8,
+      "avg_green_s": 25.11,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 15.7,
+      "delay_max": 17.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 14.4,
+       "2": 25.6,
+       "3": 13.5,
+       "4": 25.1
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "No detector",
+     "x": "none",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "detector": "none",
+     "result": {
+      "avg_delay_s": 575.51,
+      "served": 1362.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.76,
+      "residual_queue": 433.3,
+      "cycles": 0.0,
+      "avg_cycle_s": null,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 0.0,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 253,
+      "delay_min": 532.9,
+      "delay_max": 630.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 0.6,
+       "2": 0.0,
+       "3": 0.6,
+       "4": 0.0
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E3": {
+   "title": "Passage (gap) time sweep",
+   "param": "passage",
+   "cases": [
+    {
+     "label": "demand 0.8x",
+     "x": 0.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 0.5,
+     "result": {
+      "avg_delay_s": 220.32,
+      "served": 1292.4,
+      "arrived": 1438.8,
+      "throughput_ratio": 0.9,
+      "residual_queue": 146.4,
+      "cycles": 111.3,
+      "avg_cycle_s": 32.33,
+      "gap_outs": 223.4,
+      "max_outs": 0.3,
+      "avg_green_s": 8.96,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 125,
+      "delay_min": 107.5,
+      "delay_max": 350.2,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 335.9,
+       "2": 61.9,
+       "3": 234.9,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 0.8x",
+     "x": 1.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 1.0,
+     "result": {
+      "avg_delay_s": 244.53,
+      "served": 1276.9,
+      "arrived": 1438.8,
+      "throughput_ratio": 0.89,
+      "residual_queue": 161.9,
+      "cycles": 109.8,
+      "avg_cycle_s": 32.76,
+      "gap_outs": 220.2,
+      "max_outs": 0.2,
+      "avg_green_s": 9.2,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 132,
+      "delay_min": 128.0,
+      "delay_max": 371.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 373.9,
+       "2": 68.3,
+       "3": 262.3,
+       "4": 24.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 0.8x",
+     "x": 1.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 1.5,
+     "result": {
+      "avg_delay_s": 291.71,
+      "served": 1245.6,
+      "arrived": 1438.8,
+      "throughput_ratio": 0.87,
+      "residual_queue": 193.2,
+      "cycles": 107.1,
+      "avg_cycle_s": 33.59,
+      "gap_outs": 215.0,
+      "max_outs": 0.1,
+      "avg_green_s": 9.59,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 153,
+      "delay_min": 204.0,
+      "delay_max": 430.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 443.3,
+       "2": 73.8,
+       "3": 326.5,
+       "4": 25.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 0.8x",
+     "x": 2.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 2.5,
+     "result": {
+      "avg_delay_s": 14.86,
+      "served": 1433.1,
+      "arrived": 1438.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 5.7,
+      "cycles": 74.1,
+      "avg_cycle_s": 48.63,
+      "gap_outs": 148.5,
+      "max_outs": 0.6,
+      "avg_green_s": 17.0,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 14,
+      "delay_min": 14.3,
+      "delay_max": 15.2,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 13.4,
+       "2": 21.1,
+       "3": 12.7,
+       "4": 19.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 0.8x",
+     "x": 3.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 3.5,
+     "result": {
+      "avg_delay_s": 15.08,
+      "served": 1431.8,
+      "arrived": 1438.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.0,
+      "cycles": 67.1,
+      "avg_cycle_s": 53.66,
+      "gap_outs": 133.6,
+      "max_outs": 1.1,
+      "avg_green_s": 19.58,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 14,
+      "delay_min": 14.5,
+      "delay_max": 15.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 13.6,
+       "2": 21.4,
+       "3": 12.6,
+       "4": 20.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 0.8x",
+     "x": 5.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 5.0,
+     "result": {
+      "avg_delay_s": 16.25,
+      "served": 1433.1,
+      "arrived": 1438.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 5.7,
+      "cycles": 56.2,
+      "avg_cycle_s": 64.14,
+      "gap_outs": 106.6,
+      "max_outs": 6.4,
+      "avg_green_s": 24.65,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 15,
+      "delay_min": 15.1,
+      "delay_max": 17.4,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 14.4,
+       "2": 24.3,
+       "3": 13.3,
+       "4": 22.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 0.8x",
+     "x": 7.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 560.0,
+      "2": 200.0,
+      "3": 520.0,
+      "4": 160.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 7.0,
+     "result": {
+      "avg_delay_s": 17.78,
+      "served": 1432.6,
+      "arrived": 1438.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 6.2,
+      "cycles": 46.7,
+      "avg_cycle_s": 77.17,
+      "gap_outs": 73.6,
+      "max_outs": 20.6,
+      "avg_green_s": 30.94,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 17,
+      "delay_min": 16.9,
+      "delay_max": 19.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.4,
+       "2": 26.7,
+       "3": 14.6,
+       "4": 25.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 1.15x",
+     "x": 0.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 0.5,
+     "result": {
+      "avg_delay_s": 964.66,
+      "served": 1349.6,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.65,
+      "residual_queue": 724.2,
+      "cycles": 113.0,
+      "avg_cycle_s": 31.9,
+      "gap_outs": 227.9,
+      "max_outs": 0.0,
+      "avg_green_s": 8.7,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 435,
+      "delay_min": 856.2,
+      "delay_max": 1112.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 1427.0,
+       "2": 478.5,
+       "3": 1144.1,
+       "4": 102.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 1.15x",
+     "x": 1.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 1.0,
+     "result": {
+      "avg_delay_s": 1005.22,
+      "served": 1328.9,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.64,
+      "residual_queue": 744.9,
+      "cycles": 111.8,
+      "avg_cycle_s": 32.16,
+      "gap_outs": 224.0,
+      "max_outs": 0.0,
+      "avg_green_s": 8.91,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 443,
+      "delay_min": 894.0,
+      "delay_max": 1150.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 1481.4,
+       "2": 508.8,
+       "3": 1192.4,
+       "4": 119.5
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 1.15x",
+     "x": 1.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 1.5,
+     "result": {
+      "avg_delay_s": 1072.08,
+      "served": 1296.9,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.63,
+      "residual_queue": 776.9,
+      "cycles": 108.6,
+      "avg_cycle_s": 33.12,
+      "gap_outs": 217.9,
+      "max_outs": 0.0,
+      "avg_green_s": 9.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 455,
+      "delay_min": 967.0,
+      "delay_max": 1231.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 1565.0,
+       "2": 566.4,
+       "3": 1268.5,
+       "4": 149.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 1.15x",
+     "x": 2.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 2.5,
+     "result": {
+      "avg_delay_s": 20.26,
+      "served": 2064.7,
+      "arrived": 2073.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 9.1,
+      "cycles": 50.5,
+      "avg_cycle_s": 71.39,
+      "gap_outs": 86.7,
+      "max_outs": 14.6,
+      "avg_green_s": 28.18,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 19.1,
+      "delay_max": 21.8,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 18.4,
+       "2": 28.9,
+       "3": 17.2,
+       "4": 26.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 1.15x",
+     "x": 3.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 3.5,
+     "result": {
+      "avg_delay_s": 21.08,
+      "served": 2062.4,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 11.4,
+      "cycles": 46.7,
+      "avg_cycle_s": 77.16,
+      "gap_outs": 74.6,
+      "max_outs": 19.5,
+      "avg_green_s": 30.95,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 20,
+      "delay_min": 19.4,
+      "delay_max": 22.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 19.1,
+       "2": 29.8,
+       "3": 17.6,
+       "4": 29.0
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 1.15x",
+     "x": 5.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 5.0,
+     "result": {
+      "avg_delay_s": 23.24,
+      "served": 2060.9,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 12.9,
+      "cycles": 42.5,
+      "avg_cycle_s": 84.76,
+      "gap_outs": 53.4,
+      "max_outs": 32.1,
+      "avg_green_s": 34.73,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 22,
+      "delay_min": 20.8,
+      "delay_max": 25.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 22.3,
+       "2": 30.8,
+       "3": 19.6,
+       "4": 29.3
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "demand 1.15x",
+     "x": 7.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "passage": 7.0,
+     "result": {
+      "avg_delay_s": 25.96,
+      "served": 2059.7,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 14.1,
+      "cycles": 39.3,
+      "avg_cycle_s": 91.63,
+      "gap_outs": 35.0,
+      "max_outs": 44.2,
+      "avg_green_s": 38.08,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 27,
+      "delay_min": 23.9,
+      "delay_max": 28.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 27.0,
+       "2": 29.9,
+       "3": 22.4,
+       "4": 29.0
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E4": {
+   "title": "Max green sweep (demand 1.15x)",
+   "param": "max_green",
+   "cases": [
+    {
+     "label": "Actuated",
+     "x": 15,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "max_green": 15,
+     "result": {
+      "avg_delay_s": 581.68,
+      "served": 1564.9,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.76,
+      "residual_queue": 508.9,
+      "cycles": 86.2,
+      "avg_cycle_s": 41.8,
+      "gap_outs": 66.1,
+      "max_outs": 107.2,
+      "avg_green_s": 13.61,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 363,
+      "delay_min": 463.5,
+      "delay_max": 721.4,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 969.1,
+       "2": 17.6,
+       "3": 727.6,
+       "4": 15.8
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 20,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "max_green": 20,
+     "result": {
+      "avg_delay_s": 206.07,
+      "served": 1863.3,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.9,
+      "residual_queue": 210.5,
+      "cycles": 75.5,
+      "avg_cycle_s": 47.7,
+      "gap_outs": 70.7,
+      "max_outs": 81.0,
+      "avg_green_s": 16.58,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 208,
+      "delay_min": 148.8,
+      "delay_max": 299.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 367.4,
+       "2": 18.6,
+       "3": 183.0,
+       "4": 17.1
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 30,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "max_green": 30,
+     "result": {
+      "avg_delay_s": 36.82,
+      "served": 2047.4,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 26.4,
+      "cycles": 60.8,
+      "avg_cycle_s": 59.23,
+      "gap_outs": 66.7,
+      "max_outs": 55.4,
+      "avg_green_s": 22.25,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 58,
+      "delay_min": 22.7,
+      "delay_max": 71.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 56.1,
+       "2": 23.3,
+       "3": 25.2,
+       "4": 22.0
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 45,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "max_green": 45,
+     "result": {
+      "avg_delay_s": 20.89,
+      "served": 2062.9,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 10.9,
+      "cycles": 51.7,
+      "avg_cycle_s": 69.72,
+      "gap_outs": 81.9,
+      "max_outs": 21.9,
+      "avg_green_s": 27.42,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 21,
+      "delay_min": 19.4,
+      "delay_max": 23.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 20.0,
+       "2": 27.9,
+       "3": 17.8,
+       "4": 25.8
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 60,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "max_green": 60,
+     "result": {
+      "avg_delay_s": 19.91,
+      "served": 2063.9,
+      "arrived": 2073.8,
+      "throughput_ratio": 1.0,
+      "residual_queue": 9.9,
+      "cycles": 49.5,
+      "avg_cycle_s": 72.82,
+      "gap_outs": 93.9,
+      "max_outs": 5.6,
+      "avg_green_s": 28.84,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 20,
+      "delay_min": 18.8,
+      "delay_max": 21.3,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 17.4,
+       "2": 29.7,
+       "3": 16.7,
+       "4": 27.8
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 90,
+     "preset": "four_leg",
+     "rates": {
+      "1": 805.0,
+      "2": 287.5,
+      "3": 747.5,
+      "4": 230.0
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "max_green": 90,
+     "result": {
+      "avg_delay_s": 19.77,
+      "served": 2062.2,
+      "arrived": 2073.8,
+      "throughput_ratio": 0.99,
+      "residual_queue": 11.6,
+      "cycles": 48.6,
+      "avg_cycle_s": 74.2,
+      "gap_outs": 97.1,
+      "max_outs": 0.4,
+      "avg_green_s": 29.57,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 22,
+      "delay_min": 18.6,
+      "delay_max": 21.3,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 16.9,
+       "2": 30.5,
+       "3": 16.1,
+       "4": 29.5
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E5": {
+   "title": "Detector miss rate (faulty / dirty loop)",
+   "param": "miss_rate",
+   "cases": [
+    {
+     "label": "Stop line",
+     "x": 0.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.0,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream 40 m",
+     "x": 0.0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.0,
+     "detector": "upstream",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 31.06,
+      "served": 1777.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.8,
+      "cycles": 81.9,
+      "avg_cycle_s": 44.02,
+      "gap_outs": 163.2,
+      "max_outs": 1.1,
+      "avg_green_s": 14.74,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 29.9,
+      "delay_max": 32.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 25.9,
+       "2": 58.8,
+       "3": 22.5,
+       "4": 44.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Stop line",
+     "x": 0.05,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.05,
+     "result": {
+      "avg_delay_s": 17.98,
+      "served": 1786.1,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.4,
+      "cycles": 63.7,
+      "avg_cycle_s": 56.58,
+      "gap_outs": 125.1,
+      "max_outs": 3.1,
+      "avg_green_s": 20.93,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 24,
+      "delay_min": 17.1,
+      "delay_max": 19.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 16.8,
+       "2": 25.1,
+       "3": 15.0,
+       "4": 23.5
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream 40 m",
+     "x": 0.05,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.05,
+     "detector": "upstream",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 31.23,
+      "served": 1776.8,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 16.9,
+      "cycles": 82.0,
+      "avg_cycle_s": 43.97,
+      "gap_outs": 163.9,
+      "max_outs": 0.7,
+      "avg_green_s": 14.71,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 20,
+      "delay_min": 29.4,
+      "delay_max": 32.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 26.3,
+       "2": 59.1,
+       "3": 22.8,
+       "4": 43.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Stop line",
+     "x": 0.1,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.1,
+     "result": {
+      "avg_delay_s": 19.53,
+      "served": 1785.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 10.3,
+      "cycles": 66.4,
+      "avg_cycle_s": 54.25,
+      "gap_outs": 131.0,
+      "max_outs": 2.3,
+      "avg_green_s": 19.79,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 27,
+      "delay_min": 18.6,
+      "delay_max": 21.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 18.6,
+       "2": 25.9,
+       "3": 16.7,
+       "4": 24.5
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream 40 m",
+     "x": 0.1,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.1,
+     "detector": "upstream",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 31.15,
+      "served": 1777.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 16.5,
+      "cycles": 81.8,
+      "avg_cycle_s": 44.07,
+      "gap_outs": 163.3,
+      "max_outs": 1.0,
+      "avg_green_s": 14.73,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 20,
+      "delay_min": 29.1,
+      "delay_max": 32.4,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 25.8,
+       "2": 59.8,
+       "3": 22.6,
+       "4": 43.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Stop line",
+     "x": 0.2,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.2,
+     "result": {
+      "avg_delay_s": 24.42,
+      "served": 1782.3,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 13.2,
+      "cycles": 71.9,
+      "avg_cycle_s": 50.11,
+      "gap_outs": 143.2,
+      "max_outs": 1.1,
+      "avg_green_s": 17.78,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 30,
+      "delay_min": 20.1,
+      "delay_max": 30.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 26.7,
+       "2": 28.2,
+       "3": 20.4,
+       "4": 24.1
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream 40 m",
+     "x": 0.2,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.2,
+     "detector": "upstream",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 31.53,
+      "served": 1776.6,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 17.1,
+      "cycles": 81.5,
+      "avg_cycle_s": 44.21,
+      "gap_outs": 162.2,
+      "max_outs": 1.3,
+      "avg_green_s": 14.84,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 20,
+      "delay_min": 30.6,
+      "delay_max": 32.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 26.5,
+       "2": 60.3,
+       "3": 22.5,
+       "4": 44.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Stop line",
+     "x": 0.35,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.35,
+     "result": {
+      "avg_delay_s": 48.45,
+      "served": 1765.8,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.98,
+      "residual_queue": 29.7,
+      "cycles": 80.7,
+      "avg_cycle_s": 44.61,
+      "gap_outs": 161.5,
+      "max_outs": 0.6,
+      "avg_green_s": 15.06,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 59,
+      "delay_min": 31.6,
+      "delay_max": 92.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 71.6,
+       "2": 29.6,
+       "3": 36.6,
+       "4": 24.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream 40 m",
+     "x": 0.35,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.35,
+     "detector": "upstream",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 31.79,
+      "served": 1776.6,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 17.1,
+      "cycles": 81.2,
+      "avg_cycle_s": 44.4,
+      "gap_outs": 161.9,
+      "max_outs": 1.1,
+      "avg_green_s": 14.93,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 26,
+      "delay_min": 31.0,
+      "delay_max": 33.4,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 26.0,
+       "2": 62.8,
+       "3": 22.7,
+       "4": 45.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Stop line",
+     "x": 0.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.5,
+     "result": {
+      "avg_delay_s": 146.37,
+      "served": 1674.6,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.93,
+      "residual_queue": 120.9,
+      "cycles": 91.2,
+      "avg_cycle_s": 39.47,
+      "gap_outs": 182.8,
+      "max_outs": 0.0,
+      "avg_green_s": 12.53,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 165,
+      "delay_min": 64.5,
+      "delay_max": 261.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 249.8,
+       "2": 32.8,
+       "3": 122.7,
+       "4": 26.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Upstream 40 m",
+     "x": 0.5,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "miss_rate": 0.5,
+     "detector": "upstream",
+     "setback_m": 40,
+     "result": {
+      "avg_delay_s": 31.8,
+      "served": 1776.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 16.8,
+      "cycles": 80.2,
+      "avg_cycle_s": 44.93,
+      "gap_outs": 159.0,
+      "max_outs": 2.1,
+      "avg_green_s": 15.2,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 20,
+      "delay_min": 30.8,
+      "delay_max": 33.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 25.5,
+       "2": 63.8,
+       "3": 22.6,
+       "4": 46.3
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E6": {
+   "title": "Junction layouts",
+   "param": "preset",
+   "cases": [
+    {
+     "label": "Fixed P1",
+     "x": "four_leg",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P2",
+     "x": "four_leg",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 2,
+     "result": {
+      "avg_delay_s": 262.47,
+      "served": 1567.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.87,
+      "residual_queue": 228.3,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 207,
+      "delay_min": 170.5,
+      "delay_max": 366.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 438.5,
+       "2": 15.7,
+       "3": 273.2,
+       "4": 15.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": "four_leg",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 19.15,
+      "served": 1785.8,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.7,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.1,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 18.1,
+      "delay_max": 20.8,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.5,
+       "2": 35.1,
+       "3": 13.9,
+       "4": 30.4
+      },
+      "webster_greens": [
+       39,
+       15
+      ],
+      "webster_cycle": 67.8,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "four_leg",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": "left_turn",
+     "preset": "left_turn",
+     "rates": {
+      "1": 600,
+      "2": 250,
+      "3": 550,
+      "4": 220,
+      "5": 150,
+      "6": 120
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 53.62,
+      "served": 1864.0,
+      "arrived": 1893.6,
+      "throughput_ratio": 0.98,
+      "residual_queue": 29.6,
+      "cycles": 44.0,
+      "avg_cycle_s": 81.8,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 19.9,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 65,
+      "delay_min": 38.1,
+      "delay_max": 112.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 74.5,
+       "2": 32.2,
+       "3": 39.9,
+       "4": 30.9,
+       "5": 85.3,
+       "6": 51.3
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P2",
+     "x": "left_turn",
+     "preset": "left_turn",
+     "rates": {
+      "1": 600,
+      "2": 250,
+      "3": 550,
+      "4": 220,
+      "5": 150,
+      "6": 120
+     },
+     "minutes": 60.0,
+     "pattern": 2,
+     "result": {
+      "avg_delay_s": 254.02,
+      "served": 1681.8,
+      "arrived": 1893.6,
+      "throughput_ratio": 0.89,
+      "residual_queue": 211.8,
+      "cycles": 43.0,
+      "avg_cycle_s": 83.7,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 20.6,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 198,
+      "delay_min": 170.6,
+      "delay_max": 360.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 503.9,
+       "2": 27.4,
+       "3": 342.9,
+       "4": 25.9,
+       "5": 50.0,
+       "6": 41.0
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": "left_turn",
+     "preset": "left_turn",
+     "rates": {
+      "1": 600,
+      "2": 250,
+      "3": 550,
+      "4": 220,
+      "5": 150,
+      "6": 120
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 38.63,
+      "served": 1875.8,
+      "arrived": 1893.6,
+      "throughput_ratio": 0.99,
+      "residual_queue": 17.8,
+      "cycles": 35.0,
+      "avg_cycle_s": 102.9,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 26.9,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 21,
+      "delay_min": 35.4,
+      "delay_max": 47.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 27.2,
+       "2": 49.5,
+       "3": 25.5,
+       "4": 44.3,
+       "5": 89.7,
+       "6": 57.3
+      },
+      "webster_greens": [
+       47,
+       13,
+       21
+      ],
+      "webster_cycle": 102.4,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "left_turn",
+     "preset": "left_turn",
+     "rates": {
+      "1": 600,
+      "2": 250,
+      "3": 550,
+      "4": 220,
+      "5": 150,
+      "6": 120
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 33.24,
+      "served": 1876.2,
+      "arrived": 1893.6,
+      "throughput_ratio": 0.99,
+      "residual_queue": 17.4,
+      "cycles": 40.4,
+      "avg_cycle_s": 89.18,
+      "gap_outs": 95.4,
+      "max_outs": 25.5,
+      "avg_green_s": 22.57,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 25,
+      "delay_min": 30.2,
+      "delay_max": 41.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 30.5,
+       "2": 36.8,
+       "3": 26.7,
+       "4": 36.5,
+       "5": 48.1,
+       "6": 43.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": "t_junction",
+     "preset": "t_junction",
+     "rates": {
+      "1": 650,
+      "2": 600,
+      "3": 220
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "result": {
+      "avg_delay_s": 16.7,
+      "served": 1463.6,
+      "arrived": 1471.7,
+      "throughput_ratio": 0.99,
+      "residual_queue": 8.1,
+      "cycles": 56.0,
+      "avg_cycle_s": 64.3,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 25.0,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 15.2,
+      "delay_max": 17.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 14.7,
+       "2": 14.4,
+       "3": 29.0
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P2",
+     "x": "t_junction",
+     "preset": "t_junction",
+     "rates": {
+      "1": 650,
+      "2": 600,
+      "3": 220
+     },
+     "minutes": 60.0,
+     "pattern": 2,
+     "result": {
+      "avg_delay_s": 21.49,
+      "served": 1464.2,
+      "arrived": 1471.7,
+      "throughput_ratio": 0.99,
+      "residual_queue": 7.5,
+      "cycles": 56.0,
+      "avg_cycle_s": 64.3,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 24.9,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 19.2,
+      "delay_max": 24.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 22.0,
+       "2": 20.9,
+       "3": 21.3
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": "t_junction",
+     "preset": "t_junction",
+     "rates": {
+      "1": 650,
+      "2": 600,
+      "3": 220
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "result": {
+      "avg_delay_s": 16.07,
+      "served": 1466.5,
+      "arrived": 1471.7,
+      "throughput_ratio": 1.0,
+      "residual_queue": 5.2,
+      "cycles": 57.0,
+      "avg_cycle_s": 63.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 24.0,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 14.6,
+      "delay_max": 17.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 13.2,
+       "2": 12.8,
+       "3": 33.9
+      },
+      "webster_greens": [
+       35,
+       13
+      ],
+      "webster_cycle": 61.9,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "t_junction",
+     "preset": "t_junction",
+     "rates": {
+      "1": 650,
+      "2": 600,
+      "3": 220
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 14.18,
+      "served": 1466.7,
+      "arrived": 1471.7,
+      "throughput_ratio": 1.0,
+      "residual_queue": 5.0,
+      "cycles": 65.9,
+      "avg_cycle_s": 54.67,
+      "gap_outs": 126.8,
+      "max_outs": 5.6,
+      "avg_green_s": 20.04,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 16,
+      "delay_min": 13.5,
+      "delay_max": 15.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 12.6,
+       "2": 12.7,
+       "3": 23.0
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E7": {
+   "title": "Pedestrian demand (push button)",
+   "param": "ped_rate",
+   "cases": [
+    {
+     "label": "Actuated",
+     "x": 0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "peds": false,
+     "ped_rate": 0,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": 0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "peds": false,
+     "ped_rate": 0,
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 30,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "peds": true,
+     "ped_rate": 30,
+     "result": {
+      "avg_delay_s": 17.27,
+      "served": 1787.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.3,
+      "cycles": 59.8,
+      "avg_cycle_s": 60.28,
+      "gap_outs": 115.2,
+      "max_outs": 5.1,
+      "avg_green_s": 22.7,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 114.1,
+      "max_queue": 23,
+      "delay_min": 16.6,
+      "delay_max": 18.2,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.5,
+       "3": 14.7,
+       "4": 24.1
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": 30,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "peds": true,
+     "ped_rate": 30,
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 114.5,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 90,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "peds": true,
+     "ped_rate": 90,
+     "result": {
+      "avg_delay_s": 17.29,
+      "served": 1788.6,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 6.9,
+      "cycles": 59.5,
+      "avg_cycle_s": 60.57,
+      "gap_outs": 114.7,
+      "max_outs": 4.9,
+      "avg_green_s": 22.86,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 354.8,
+      "max_queue": 23,
+      "delay_min": 16.8,
+      "delay_max": 18.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.5,
+       "2": 24.4,
+       "3": 14.5,
+       "4": 24.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": 90,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "peds": true,
+     "ped_rate": 90,
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 356.6,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 200,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "peds": true,
+     "ped_rate": 200,
+     "result": {
+      "avg_delay_s": 17.29,
+      "served": 1788.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.3,
+      "cycles": 59.4,
+      "avg_cycle_s": 60.68,
+      "gap_outs": 114.6,
+      "max_outs": 4.9,
+      "avg_green_s": 22.9,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 789.0,
+      "max_queue": 23,
+      "delay_min": 16.7,
+      "delay_max": 18.3,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.4,
+       "2": 24.3,
+       "3": 14.7,
+       "4": 24.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": 200,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "peds": true,
+     "ped_rate": 200,
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 793.7,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 400,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "peds": true,
+     "ped_rate": 400,
+     "result": {
+      "avg_delay_s": 17.29,
+      "served": 1788.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.3,
+      "cycles": 59.4,
+      "avg_cycle_s": 60.68,
+      "gap_outs": 114.7,
+      "max_outs": 4.8,
+      "avg_green_s": 22.9,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 1583.3,
+      "max_queue": 23,
+      "delay_min": 16.7,
+      "delay_max": 18.3,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.4,
+       "2": 24.3,
+       "3": 14.7,
+       "4": 24.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": 400,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "peds": true,
+     "ped_rate": 400,
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 1590.4,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E8": {
+   "title": "Emergency vehicle preemption frequency",
+   "param": "preempt_every_s",
+   "cases": [
+    {
+     "label": "Actuated",
+     "x": 0,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 600,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "preempt_every_s": 600,
+     "result": {
+      "avg_delay_s": 18.3,
+      "served": 1786.2,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.3,
+      "cycles": 60.1,
+      "avg_cycle_s": 59.96,
+      "gap_outs": 115.5,
+      "max_outs": 5.3,
+      "avg_green_s": 22.59,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 17.5,
+      "delay_max": 19.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 17.0,
+       "2": 25.2,
+       "3": 15.4,
+       "4": 24.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 300,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "preempt_every_s": 300,
+     "result": {
+      "avg_delay_s": 19.33,
+      "served": 1787.7,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.8,
+      "cycles": 60.1,
+      "avg_cycle_s": 60.0,
+      "gap_outs": 114.5,
+      "max_outs": 6.2,
+      "avg_green_s": 22.58,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 29,
+      "delay_min": 18.3,
+      "delay_max": 20.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 18.5,
+       "2": 24.9,
+       "3": 16.7,
+       "4": 24.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 120,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "preempt_every_s": 120,
+     "result": {
+      "avg_delay_s": 26.31,
+      "served": 1785.7,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.8,
+      "cycles": 61.5,
+      "avg_cycle_s": 58.55,
+      "gap_outs": 108.8,
+      "max_outs": 14.2,
+      "avg_green_s": 21.97,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 37,
+      "delay_min": 21.8,
+      "delay_max": 33.5,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 29.1,
+       "2": 24.0,
+       "3": 25.1,
+       "4": 22.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": 60,
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "preempt_every_s": 60,
+     "result": {
+      "avg_delay_s": 25.88,
+      "served": 1786.4,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.1,
+      "cycles": 60.3,
+      "avg_cycle_s": 59.7,
+      "gap_outs": 120.7,
+      "max_outs": 0.0,
+      "avg_green_s": 22.44,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 33,
+      "delay_min": 20.6,
+      "delay_max": 35.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 31.0,
+       "2": 21.1,
+       "3": 23.3,
+       "4": 20.6
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E9": {
+   "title": "Fault injection (t=600 s)",
+   "param": "fault",
+   "cases": [
+    {
+     "label": "No fault",
+     "x": "none",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Stuck detector (phase 2, always occupied)",
+     "x": "DETECTOR_FAULT",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "fault": {
+      "alarm": "DETECTOR_FAULT",
+      "phase": 2
+     },
+     "result": {
+      "avg_delay_s": 25.32,
+      "served": 1780.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 14.6,
+      "cycles": 42.4,
+      "avg_cycle_s": 84.98,
+      "gap_outs": 39.1,
+      "max_outs": 46.1,
+      "avg_green_s": 34.89,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 29,
+      "delay_min": 23.6,
+      "delay_max": 26.9,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [
+       "DETECTOR_FAULT"
+      ],
+      "per_phase_delay": {
+       "1": 26.4,
+       "2": 23.5,
+       "3": 25.2,
+       "4": 23.6
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Welded relay: phase 2 green (conflict)",
+     "x": "CONFLICT",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "fault": {
+      "alarm": "CONFLICT",
+      "phase": 2
+     },
+     "result": {
+      "avg_delay_s": 7752.08,
+      "served": 292.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.16,
+      "residual_queue": 1503.0,
+      "cycles": 10.5,
+      "avg_cycle_s": 345.65,
+      "gap_outs": 20.2,
+      "max_outs": 0.8,
+      "avg_green_s": 21.56,
+      "conflict_time_s": 0.0,
+      "flash_at_s": 605.85,
+      "peds_crossed": 0.0,
+      "max_queue": 644,
+      "delay_min": 7099.4,
+      "delay_max": 8447.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [
+       "CONFLICT"
+      ],
+      "per_phase_delay": {
+       "1": 7911.5,
+       "2": 7548.6,
+       "3": 7897.1,
+       "4": 7446.9
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Red lamp failure (phase 3)",
+     "x": "RED_LAMP_OUT",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "fault": {
+      "alarm": "RED_LAMP_OUT",
+      "phase": 3
+     },
+     "result": {
+      "avg_delay_s": 7792.88,
+      "served": 291.4,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.16,
+      "residual_queue": 1504.1,
+      "cycles": 9.9,
+      "avg_cycle_s": 366.19,
+      "gap_outs": 19.8,
+      "max_outs": 0.8,
+      "avg_green_s": 21.75,
+      "conflict_time_s": 0.0,
+      "flash_at_s": 600.1,
+      "peds_crossed": 0.0,
+      "max_queue": 644,
+      "delay_min": 7099.4,
+      "delay_max": 8488.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [
+       "RED_LAMP_OUT"
+      ],
+      "per_phase_delay": {
+       "1": 7911.5,
+       "2": 7728.2,
+       "3": 7897.1,
+       "4": 7617.3
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E10": {
+   "title": "Demand profile: flat vs peak wave",
+   "param": "profile",
+   "cases": [
+    {
+     "label": "Fixed P1",
+     "x": "flat",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "profile": "flat",
+     "result": {
+      "avg_delay_s": 22.75,
+      "served": 1780.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 15.0,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 29,
+      "delay_min": 19.8,
+      "delay_max": 26.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.4,
+       "2": 24.1,
+       "3": 20.1,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": "flat",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "profile": "flat",
+     "result": {
+      "avg_delay_s": 19.15,
+      "served": 1785.8,
+      "arrived": 1795.5,
+      "throughput_ratio": 0.99,
+      "residual_queue": 9.7,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.1,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 19,
+      "delay_min": 18.1,
+      "delay_max": 20.8,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.5,
+       "2": 35.1,
+       "3": 13.9,
+       "4": 30.4
+      },
+      "webster_greens": [
+       39,
+       15
+      ],
+      "webster_cycle": 67.8,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "flat",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "profile": "flat",
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Fixed P1",
+     "x": "peak",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 1,
+     "profile": "peak",
+     "result": {
+      "avg_delay_s": 33.41,
+      "served": 1774.9,
+      "arrived": 1785.4,
+      "throughput_ratio": 0.99,
+      "residual_queue": 10.5,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.4,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 39,
+      "delay_min": 29.9,
+      "delay_max": 36.1,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 39.6,
+       "2": 26.0,
+       "3": 32.2,
+       "4": 23.8
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Webster",
+     "x": "peak",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 200,
+     "profile": "peak",
+     "result": {
+      "avg_delay_s": 27.08,
+      "served": 1777.7,
+      "arrived": 1785.4,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.7,
+      "cycles": 52.0,
+      "avg_cycle_s": 69.2,
+      "gap_outs": 0.0,
+      "max_outs": 0.0,
+      "avg_green_s": 27.1,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 26,
+      "delay_min": 25.6,
+      "delay_max": 29.6,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 24.3,
+       "2": 49.1,
+       "3": 19.5,
+       "4": 34.9
+      },
+      "webster_greens": [
+       39,
+       15
+      ],
+      "webster_cycle": 67.8,
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "peak",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "profile": "peak",
+     "result": {
+      "avg_delay_s": 22.4,
+      "served": 1779.1,
+      "arrived": 1785.4,
+      "throughput_ratio": 1.0,
+      "residual_queue": 6.3,
+      "cycles": 61.0,
+      "avg_cycle_s": 59.05,
+      "gap_outs": 107.3,
+      "max_outs": 15.4,
+      "avg_green_s": 22.14,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 30,
+      "delay_min": 20.3,
+      "delay_max": 24.3,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 22.2,
+       "2": 27.3,
+       "3": 19.6,
+       "4": 26.6
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  },
+  "E11": {
+   "title": "Intergreen (amber + all-red) effect",
+   "param": "intergreen",
+   "cases": [
+    {
+     "label": "Actuated",
+     "x": "3+1",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "yellow": 3,
+     "all_red": 1,
+     "result": {
+      "avg_delay_s": 15.9,
+      "served": 1787.6,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 7.9,
+      "cycles": 64.5,
+      "avg_cycle_s": 55.86,
+      "gap_outs": 126.0,
+      "max_outs": 4.0,
+      "avg_green_s": 21.39,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 24,
+      "delay_min": 15.4,
+      "delay_max": 16.8,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 13.9,
+       "2": 23.4,
+       "3": 13.2,
+       "4": 23.2
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "3+2",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "yellow": 3,
+     "all_red": 2,
+     "result": {
+      "avg_delay_s": 17.13,
+      "served": 1786.9,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.6,
+      "cycles": 60.6,
+      "avg_cycle_s": 59.46,
+      "gap_outs": 116.0,
+      "max_outs": 5.7,
+      "avg_green_s": 22.33,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 23,
+      "delay_min": 16.2,
+      "delay_max": 18.0,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 15.3,
+       "2": 24.2,
+       "3": 14.6,
+       "4": 23.7
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "4+2",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "yellow": 4,
+     "all_red": 2,
+     "result": {
+      "avg_delay_s": 18.52,
+      "served": 1786.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 9.0,
+      "cycles": 56.6,
+      "avg_cycle_s": 63.69,
+      "gap_outs": 108.2,
+      "max_outs": 5.9,
+      "avg_green_s": 23.35,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 24,
+      "delay_min": 17.8,
+      "delay_max": 19.7,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 16.4,
+       "2": 26.7,
+       "3": 15.8,
+       "4": 25.4
+      },
+      "seeds": 10
+     }
+    },
+    {
+     "label": "Actuated",
+     "x": "4+3",
+     "preset": "four_leg",
+     "rates": {
+      "1": 700,
+      "2": 250,
+      "3": 650,
+      "4": 200
+     },
+     "minutes": 60.0,
+     "pattern": 254,
+     "yellow": 4,
+     "all_red": 3,
+     "result": {
+      "avg_delay_s": 20.16,
+      "served": 1787.5,
+      "arrived": 1795.5,
+      "throughput_ratio": 1.0,
+      "residual_queue": 8.0,
+      "cycles": 52.9,
+      "avg_cycle_s": 68.09,
+      "gap_outs": 99.6,
+      "max_outs": 6.6,
+      "avg_green_s": 24.53,
+      "conflict_time_s": 0.0,
+      "flash_at_s": null,
+      "peds_crossed": 0.0,
+      "max_queue": 24,
+      "delay_min": 18.8,
+      "delay_max": 21.2,
+      "conflict_steps": 0,
+      "bad_sequences": 0,
+      "alarms": [],
+      "per_phase_delay": {
+       "1": 18.3,
+       "2": 27.8,
+       "3": 17.0,
+       "4": 27.9
+      },
+      "seeds": 10
+     }
+    }
+   ]
+  }
+ }
+}

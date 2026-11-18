@@ -1,0 +1,24 @@
+[Unit]
+Description=junction-lab central management system
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+User=jl
+Group=jl
+WorkingDirectory=/opt/junction-lab
+EnvironmentFile=/etc/junction-lab/center.env
+ExecStart=/opt/junction-lab/.venv/bin/jl-center --host 0.0.0.0 --port 8000
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ReadWritePaths=/var/lib/junction-lab
+SyslogIdentifier=jl-center
+
+[Install]
+WantedBy=multi-user.target

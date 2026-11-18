@@ -1,0 +1,58 @@
+# docker compose up --build   ->  http://localhost:8000  (operator / operator123)
+x-controller: &controller
+  build: .
+  image: junction-lab
+  restart: unless-stopped
+  networks: [field]
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: jl
+      POSTGRES_PASSWORD: jl
+      POSTGRES_DB: junctionlab
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jl"]
+      interval: 3s
+      retries: 20
+    networks: [field]
+
+  center:
+    build: .
+    image: junction-lab
+    restart: unless-stopped
+    depends_on:
+      db: { condition: service_healthy }
+    environment:
+      JL_DATABASE_URL: postgresql+asyncpg://jl:jl@db:5432/junctionlab
+      JL_JUNCTIONS: configs/junctions.docker.json
+      JL_JWT_SECRET: ${JL_JWT_SECRET:-change-me-please-use-a-long-random-secret}
+      JL_CORS: http://localhost:8000
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"]
+      interval: 10s
+    networks: [field]
+
+  # 3 virtual field devices. The center reaches them by hostname, exactly like
+  # it would reach real controllers over a VPN.
+  ctrl1:
+    <<: *controller
+    command: [jl-controller, --device-id, "1", --preset, four_leg, --name, "Kızılay Meydanı", --snmp-port, "161",
+              --jlp-port, "6001", --center, "center:15050", --trap-target, "center:1162", --sim-traffic]
+  ctrl2:
+    <<: *controller
+    command: [jl-controller, --device-id, "2", --preset, left_turn, --name, "Ulus Kavşağı", --snmp-port, "161",
+              --jlp-port, "6002", --center, "center:15050", --trap-target, "center:1162", --sim-traffic]
+  ctrl3:
+    <<: *controller
+    command: [jl-controller, --device-id, "3", --preset, t_junction, --name, "İvedik OSB Girişi", --snmp-port, "161",
+              --jlp-port, "6003", --center, "center:15050", --trap-target, "center:1162", --sim-traffic]
+
+volumes:
+  pgdata:
+
+networks:
+  field:

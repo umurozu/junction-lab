@@ -1,0 +1,37 @@
+# Virtual junction controller, one instance per device:
+#   sudo systemctl enable --now jl-controller@1
+# Per-instance settings live in /etc/junction-lab/controller-<id>.env
+[Unit]
+Description=junction-lab virtual signal controller %i
+Documentation=https://github.com/umurozu/junction-lab
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+User=jl
+Group=jl
+EnvironmentFile=/etc/junction-lab/controller-%i.env
+ExecStart=/opt/junction-lab/.venv/bin/jl-controller --device-id %i \
+    --preset ${PRESET} --name ${NAME} --snmp-port ${SNMP_PORT} \
+    --center ${CENTER} --trap-target ${TRAP_TARGET} $EXTRA_ARGS
+# the tick loop pings the watchdog; a hung controller is restarted
+WatchdogSec=10
+Restart=on-failure
+RestartSec=2
+# allow binding udp/161 without root
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+# hardening
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+SyslogIdentifier=jl-controller-%i
+
+[Install]
+WantedBy=multi-user.target

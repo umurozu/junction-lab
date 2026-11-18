@@ -1,0 +1,27 @@
+stages: [test, build]
+
+python:
+  stage: test
+  image: ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+  script:
+    - uv sync
+    - uv run ruff check src tests
+    - uv run pytest -q --junitxml=report.xml
+  artifacts:
+    reports: { junit: report.xml }
+
+web:
+  stage: test
+  image: node:22-alpine
+  script:
+    - npm ci --prefix web
+    - npm run build --prefix web
+
+docker:
+  stage: build
+  image: docker:27
+  services: [docker:27-dind]
+  script:
+    - docker build -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA" .
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

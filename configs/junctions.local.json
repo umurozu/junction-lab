@@ -1,0 +1,8 @@
+[
+  {"device_id": 1, "name": "Kızılay Meydanı", "preset": "four_leg", "lat": 39.92077, "lon": 32.85411,
+   "host": "127.0.0.1", "snmp_port": 16101, "jlp_port": 6001},
+  {"device_id": 2, "name": "Ulus Kavşağı", "preset": "left_turn", "lat": 39.94186, "lon": 32.85432,
+   "host": "127.0.0.1", "snmp_port": 16102, "jlp_port": 6002},
+  {"device_id": 3, "name": "İvedik OSB Girişi", "preset": "t_junction", "lat": 39.99310, "lon": 32.75020,
+   "host": "127.0.0.1", "snmp_port": 16103, "jlp_port": 6003}
+]

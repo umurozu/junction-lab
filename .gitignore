@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.db
+*.sqlite
+node_modules/
+web/dist/
+*.pt
+*.engine
+*.onnx
+videos/
+.env
+
+.claude/

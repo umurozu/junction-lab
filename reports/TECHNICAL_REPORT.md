@@ -50,18 +50,27 @@ Trying these parameters on a real junction is expensive and risky. The goals of 
 
 ## 2. System Architecture
 
-```
-                 ┌─────────────────────────── field ───────────────────────────┐        ┌──────────── center ─────────────┐
- jl-sim (loops) ──JLP DETECTOR──►  jl-controller  (one per junction)           │        │  jl-center (FastAPI)            │
- (simulated detectors)          │  stage FSM + conflict monitor                 │ SNMP   │  • SNMP poller (1 Hz, NTCIP)    │
-                                │  SNMPv2c agent, NTCIP 1202 ◄──────────────────┼─GET/SET┤  • trap receiver                │
-                                │  traps ───────────────────────────────────────┼───────►│  • JLP endpoint                 │──► PostgreSQL
-                                │  JLP status/counts/alarms ────────────────────┼───────►│  • REST + WebSocket, JWT        │
-                                │  JLP commands ◄───────────────────────────────┼────────┤  • /metrics (Prometheus)        │
-                                └───────────────────────────────────────────────┘        └───────────────┬─────────────────┘
-                                                                                                         │ WS
-                                                                                        React/TS operator panel (map,
-                                                                                        live intersection, timing diagram)
+```mermaid
+flowchart LR
+    subgraph FIELD["🚦 Field (one per junction)"]
+        SIM["jl-sim<br/>simulated detectors<br/>(stop-line / upstream loops)"]
+        CTRL["jl-controller<br/>stage FSM + conflict monitor<br/>SNMPv2c agent · NTCIP 1202"]
+        SIM -- "JLP DETECTOR" --> CTRL
+    end
+
+    subgraph CENTER["🖥️ Center"]
+        API["jl-center (FastAPI)<br/>SNMP poller · trap receiver<br/>JLP endpoint · REST + JWT<br/>/metrics (Prometheus)"]
+        DB[("PostgreSQL")]
+        API --> DB
+    end
+
+    UI["React/TS operator panel<br/>map · live intersection · timing diagram"]
+
+    API -- "SNMP GET/SET (1 Hz)" --> CTRL
+    CTRL -- "SNMP traps" --> API
+    CTRL -- "JLP status / counts / alarms" --> API
+    API -- "JLP commands" --> CTRL
+    API <-- "WebSocket" --> UI
 ```
 
 ### 2.1 Layers
